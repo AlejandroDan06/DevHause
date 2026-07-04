@@ -4,5 +4,5 @@ export const teamMembers = [
   { id: 3, name: "Integrante 3", role: "Full Stack Developer" },
   { id: 4, name: "Integrante 4", role: "UI/UX Designer" },
   { id: 5, name: "Integrante 5", role: "DevOps Engineer" },
-  { id: 6, name: "Patricio", role: "Data & Analytics" },
+  { id: 6, name: "Integrante 6", role: "Project Manager" },
 ];
