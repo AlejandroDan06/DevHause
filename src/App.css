@@ -1,0 +1,122 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 48px 24px;
+  box-sizing: border-box;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px;
+  }
+}
+
+.landing__header {
+  margin-bottom: 48px;
+}
+
+.landing__title {
+  font-family: var(--heading);
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: -2px;
+  margin: 0 0 8px;
+  color: var(--text-h);
+
+  @media (max-width: 1024px) {
+    font-size: 40px;
+  }
+}
+
+.landing__subtitle {
+  font-size: 18px;
+  color: var(--text);
+  margin: 0;
+}
+
+.landing__team {
+  text-align: left;
+}
+
+.landing__team-title {
+  font-family: var(--heading);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--text-h);
+  margin: 0 0 24px;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+.landing__members {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.landing__member {
+  display: flex;
+}
+
+.landing__member-link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--social-bg);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: var(--shadow);
+    border-color: var(--accent-border);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.landing__member-name {
+  font-family: var(--heading);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--text-h);
+  margin-bottom: 4px;
+}
+
+.landing__member-role {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.landing__back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
